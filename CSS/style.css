@@ -225,7 +225,11 @@ body {
   display: grid;
   gap: 14px;
   border-color: rgba(37, 99, 235, 0.22);
-  background: linear-gradient(180deg, rgba(59, 130, 246, 0.08), rgba(255, 255, 255, 0.85));
+  background: linear-gradient(
+    180deg,
+    rgba(59, 130, 246, 0.08),
+    rgba(255, 255, 255, 0.85)
+  );
 }
 
 .quote {
@@ -293,4 +297,31 @@ body {
   .subtitle {
     max-width: 100%;
   }
+}
+
+.header-inner {
+  position: relative;
+}
+
+.top-back {
+  position: absolute;
+  top: 10px;     
+  right: 0;     
+  display: inline-block;
+
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 800;
+  color: #2563eb;
+
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  background: rgba(37, 99, 235, 0.08);
+  cursor: pointer;
+}
+
+.top-back:hover {
+  background: rgba(37, 99, 235, 0.15);
 }
