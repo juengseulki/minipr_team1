@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background: linear-gradient(135deg, #ffeef5, #f3f4ff);
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+/* 전체 카드 */
+.about-card {
+    width: 650px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* 프로필 영역 */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 600;
+    color: #444;
+}
+
+.one-line {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* 소개 카드들 */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    background: #f8f9ff;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(200, 210, 255, 0.4);
+}
+
+.item h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.item p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* 다짐 강조 */
+.highlight {
+    background: #ffeaf3;
+}
+
+/* 하단 돌아가기 */
+.back-box {
+    margin-top: 40px;
+    padding: 18px;
+    background: #f3f4ff;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.back-link {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #333;
+    letter-spacing: 1px;
+}
