@@ -30,7 +30,7 @@
 
 ### 📌 1-1. push 오류 발생
 
-![push 오류](image.png)
+![push 오류](/image/image.png)
 
 에러 메시지 핵심:
 
@@ -55,7 +55,7 @@ error: failed to push some refs to
 git pull origin
 ```
 
-![pull 과정](image-2.png)
+![pull 과정](/image/image-2.png)
 
 #### ✔ Step 2. push
 
@@ -63,7 +63,7 @@ git pull origin
 git push origin
 ```
 
-![push 성공](image-3.png)
+![push 성공](/image/image-3.png)
 
 #### 📌 기본 작업 순서
 
@@ -75,7 +75,7 @@ add → commit → pull → push
 
 ### ⚠ 1-3. 같은 파일, 같은 위치 수정 시 발생하는 충돌
 
-![충돌 에러](image-4.png)
+![충돌 에러](/image/image-4.png)
 
 ```bash
 <<<<<<< HEAD
@@ -85,7 +85,7 @@ add → commit → pull → push
 >>>>>>> branch-name
 ```
 
-![충돌 표시 화면](image-5.png)
+![충돌 표시 화면](/image/image-5.png)
 
 #### 🛠 해결 방법
 
@@ -112,7 +112,7 @@ git push origin
 
 ## ✏ 2. 오타 (Typo)
 
-![오타 예시](image-6.png)
+![오타 예시](/image/image-6.png)
 
 코딩 중 사소한 오타 하나로도:
 
