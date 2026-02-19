@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개 | 강정민</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">JM</div>
+          <div class="profile-text">
+            <p class="badge">Seoul · ISTJ</p>
+            <h1 class="title">안녕하세요 <span class="accent">강정민</span>입니다 👋</h1>
+            <p class="subtitle">
+              백엔드 위주로 공부해왔고, 이번 스프린트에서 앱·웹 개발부터 배포까지 전 과정을
+              제대로 경험해보려 해요.
+            </p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="#about" class="nav-link">소개</a>
+          <a href="#likes" class="nav-link">취향</a>
+          <a href="#project" class="nav-link">만들고 싶은 서비스</a>
+          <a href="#tmi" class="nav-link">TMI</a>
+          <a href="#promise" class="nav-link">다짐</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+      <!-- Quick cards -->
+      <section class="grid">
+        <article class="card">
+          <h2 class="card-title">현재 거주지</h2>
+          <p class="card-text">서울 송파구</p>
+        </article>
+        <article class="card">
+          <h2 class="card-title">MBTI</h2>
+          <p class="card-text">ISTJ</p>
+        </article>
+        <article class="card">
+          <h2 class="card-title">요즘 취미</h2>
+          <p class="card-text">축구 ⚽ · 드라마 📺</p>
+        </article>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 class="section-title">소개</h2>
+        <div class="card">
+          <p class="paragraph">
+            저는 <b>백엔드 위주</b>로 공부해왔지만, 이번 기회를 통해 <b>앱·웹 개발부터 배포까지</b>
+            전 과정을 직접 경험해보고 싶어서 참여하게 되었어요.
+          </p>
+          <div class="chips">
+            <span class="chip">꾸준함</span>
+            <span class="chip">정리하는 습관</span>
+            <span class="chip">완성까지 밀어붙이기</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Likes -->
+      <section id="likes" class="section">
+        <h2 class="section-title">취향</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3 class="card-title">좋아하는 음식</h3>
+            <ul class="list">
+              <li>초밥 🍣</li>
+              <li>국밥 🍲</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card-title">싫어하는 음식</h3>
+            <p class="card-text">고수 🌿 (향이 너무 강해요…)</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Project -->
+      <section id="project" class="section">
+        <h2 class="section-title">만들고 싶은 서비스</h2>
+        <article class="card">
+          <h3 class="card-title">협업 플랫폼 (GitHub 느낌)</h3>
+          <p class="paragraph">
+            <b>깃허브처럼 협업</b>을 중심에 두되, <b>일정 관리</b>와 <b>팀 관리</b>까지 한 번에 할 수 있는
+            서비스를 구현해보고 싶습니다.
+          </p>
+          <div class="grid-3">
+            <div class="mini">
+              <p class="mini-title">핵심 기능</p>
+              <p class="mini-text">이슈/태스크, PR 흐름</p>
+            </div>
+            <div class="mini">
+              <p class="mini-title">팀 운영</p>
+              <p class="mini-text">권한, 역할, 알림</p>
+            </div>
+            <div class="mini">
+              <p class="mini-title">일정 관리</p>
+              <p class="mini-text">캘린더, 마일스톤</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- TMI -->
+      <section id="tmi" class="section">
+        <h2 class="section-title">TMI</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3 class="card-title">혼밥 경험</h3>
+            <p class="card-text">혼자 여행 가서 고기집에서 혼밥 해본 적 있어요 🍖</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">근황</h3>
+            <p class="card-text">요즘 감기에 걸렸어요… 따뜻하게 입고 다니기! 🤧</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Promise -->
+      <section id="promise" class="section">
+        <h2 class="section-title">스프린트 시작 다짐</h2>
+        <article class="card callout">
+          <p class="quote">
+            “7개월 후 수료할 때, 지금보다 훨씬 성장한 개발자가 되어 있고 싶습니다.”
+          </p>
+          <button class="btn" type="button" onclick="alert('오늘도 한 걸음! 🚀')">
+            나의 다짐 확인하기
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-text">© <span id="year"></span> 강정민 · Intro Page</p>
+        <a class="footer-link" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+          맨 위로
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
