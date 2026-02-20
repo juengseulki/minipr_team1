@@ -20,6 +20,7 @@
   - [🔧 1-2. 해결 방법](#-1-2-해결-방법)
   - [⚠ 1-3. 같은 파일 충돌](#-1-3-같은-파일-같은-위치-수정-시-발생하는-충돌)
 - [✏ 2. 오타 (Typo)](#-2-오타-typo)
+- [⚠ 3. 로컬 변경 사항으로 인한 pull 실패](#-3-로컬-변경-사항으로-인한-pull-실패)
 - [💬 1팀의 협업 방식 개선](#-1팀의-협업-방식-개선)
 - [🤝 우리는 이렇게 소통했다](#-우리는-이렇게-소통했다)
 - [📝 느낀 점](#-미니-프로젝트를-하면서-느낀-점)
@@ -121,6 +122,47 @@ git push origin
 - push 전 명령어 재확인
 
 > 작은 실수도 협업에서는 큰 영향을 줄 수 있음을 배웠습니다.
+
+---
+
+### ⚠ 3. 로컬 변경 사항으로 인한 pull 실패
+
+```bash
+$ git pull origin main
+From github.com:juengseulki/minipr_team1
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+        index.html
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+```
+
+### ✔ 발생 상황
+
+- `git push` 전에 `index.html` 파일을 일부 수정하였다.
+- add 또는 commit을 하지 않은 상태에서 pull을 시도하였다.
+- 그 결과 병합이 중단되었다.
+
+### ✔ 원인
+
+- 로컬 변경 사항이 정리되지 않은 상태였다.
+- pull 시 기존 수정 내용이 덮어씌워질 가능성이 있었기 때문에 Git이 자동으로 차단하였다.
+- 변경 사항을 commit하거나 stash하지 않은 상태에서 pull을 시도했기 때문에 발생한 오류이다.
+
+> 👉 Git은 데이터 손실을 방지하기 위해 병합을 중단한다.
+
+### 🛠 해결 방법
+
+특정 파일의 변경 사항을 되돌린 후 다시 작업을 진행하였다.
+
+```bash
+git checkout -- index.html
+```
+
+이후 정상적으로 pull 및 push를 수행하였다.
+
+> 작업 중인 파일이 있다면 반드시 commit 또는 정리 후 pull을 진행해야 한다는 것을 배웠다.
 
 ---
 
